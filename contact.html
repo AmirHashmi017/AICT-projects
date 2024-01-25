@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				background-image: url("https://img.freepik.com/premium-photo/wooden-block-with-symbol-telephone-email-address-website-page-contact-us-e-mail-marketing-concept-3d-rendering_20693-752.jpg");
+				margin-top: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 90vh;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			.head {
+				color: #ccc;
+				font-size: 30px;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			input[type="text"],
+			select,
+			textarea {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				margin-top: 6px;
+				margin-bottom: 16px;
+				resize: vertical;
+			}
+
+			input[type="email"],
+			select,
+			textarea {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				margin-top: 6px;
+				margin-bottom: 16px;
+				resize: vertical;
+			}
+			.button {
+				background-color: gray; /* Green */
+				border: none;
+				color: black;
+				padding: 6px 25px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 12px;
+				margin: 4px 2px;
+				transition-duration: 0.4s;
+				cursor: pointer;
+				border-radius: 50px;
+			}
+			.button1 {
+				background-color: white;
+				color: black;
+				border: 2px solid #04aa6d;
+			}
+
+			.button1:hover {
+				background-color: #04aa6d;
+				color: white;
+			}
+			.navbar {
+				overflow: hidden;
+
+				border-radius: 50px;
+				display: flex;
+				flex-direction: column;
+				position: fixed;
+				right: 20px;
+				left: 10px;
+
+				padding-left: 10px;
+				padding-top: 5px;
+				width: 20%;
+				height: 30%;
+				top: 1px;
+
+				font-size: 120%;
+				padding: 1px 1px;
+
+				justify-content: space-between;
+				/* margin: 0px auto; */
+
+				left: 50px;
+				top: 1px;
+			}
+
+			input[type="submit"] {
+				background-color: brown;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			input[type="submit"]:hover {
+				background-color: #45a049;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				margin-top: 20px;
+				color: black;
+				height: 420px;
+			}
+
+			label {
+				margin-top: auto;
+				margin-bottom: 5px;
+				color: antiquewhite;
+			}
+
+			.container {
+				background-color: #333;
+				padding: 30px;
+				border-radius: 8px;
+				box-shadow: 0 0 30px rgb(19, 1, 1);
+				text-align: center;
+				max-width: 450px;
+				width: 150%;
+				margin-top: auto;
+			}
+		</style>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact us</title>
+	</head>
+	<body>
+		<div>
+			<nav>
+				<div>
+					<ul class="navbar">
+						<ol class="home">
+							<a href="/p.html"><button class="button button1">Home</button></a>
+						</ol>
+
+						<ol>
+							<a href="/contact.html"
+								><button class="button button1">Contact</button></a
+							>
+						</ol>
+						<ol>
+							<a href="/menu.html"
+								><button class="button button1">Menu</button></a
+							>
+						</ol>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container">
+				<h3 class="head">Contact Us</h3>
+				<p class="head">=> 0330-2947262</p>
+
+				<form action="mailto:abdulrehmansafdar2928@gmail.com">
+					<label for="fname">Name</label>
+					<input
+						type="text"
+						id="fname"
+						name="firstname"
+						placeholder="Your name.."
+						required
+					/>
+
+					<label for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Your Email..."
+						required
+					/>
+
+					<label for="country">Area</label>
+					<select id="country" name="country">
+						<option value="Gulberg">Gulberg</option>
+						<option value="Model town">Model town</option>
+						<option value="uet">UET</option>
+						<option value="kalma">kalma Chock</option>
+						<option value="anarkali">Anarkali</option>
+					</select>
+
+					<label for="subject">Give your reviews</label>
+					<textarea
+						id="subject"
+						name="subject"
+						placeholder="Write something...."
+						style="height: 70px"
+						required
+					></textarea>
+
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

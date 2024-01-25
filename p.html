@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body {
+				margin: 0px;
+				font-size: 16px;
+			}
+			body .mainh {
+				color: aliceblue;
+				font-size: 60px;
+			}
+			.container{
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+				.text2{
+					position: relative !important;
+				}
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+
+
+			.main2 {
+				color: aliceblue;
+				font-size: 50px;
+				padding-bottom: 30%;
+			}
+			.mainh2 {
+				font-size: 40px;
+				color: aliceblue;
+			}
+			.mainp {
+				font-size: 35px;
+				color: aliceblue;
+			}
+			.navbar {
+				overflow: hidden;
+background-color: aliceblue;
+				border-radius: 50px;
+				display: flex;
+				position: fixed;
+				bottom: 84%;
+				width: 15%;
+				top: 0px;
+				font-size: 120%;
+				padding: 0px 400px;
+
+				justify-content: space-between;
+				/* margin: 0px auto; */
+
+				left: 1px;
+			}
+			.rew{
+				color: white;
+				width: auto;
+			}
+			.nav2 {
+				overflow: hidden;
+
+				
+				display: flex;
+				position: relative;
+				bottom: 124%;
+				width: 60%;
+				top: 3px;
+				font-size: 120%;
+				padding: 30px 120px;
+
+				justify-content: space-between;
+				/* margin: 0px auto; */
+
+				left: 7px;
+			}
+			a {
+				text-decoration: none;
+				color: white;
+				font-weight: 500;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			
+			.button {
+				background-color: gray; /* Green */
+				border: none;
+				color: black;
+				padding: 10px 30px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 19px;
+				margin: 4px 2px;
+				transition-duration: 0.4s;
+				cursor: pointer;
+				border-radius: 50px;
+			}
+			.logina{
+				padding-right:10px ;
+			}
+			.button1 {
+				background-color: white;
+				color: black;
+				border: 2px solid #04aa6d;
+			}
+
+			.button1:hover {
+				background-color: #04aa6d;
+				color: white;
+			}
+			.button2 {
+				background-color: black;
+				color: white;
+				border: 2px solid red;
+			}
+
+			.button2:hover {
+				background-color: white;
+				color: darkred;
+			}
+			.login{
+			background-color: white;
+				border-radius: 30px;
+				border: #000;
+				color: aliceblue;
+				font-size: 120px;
+					right: 30px;
+					left:10px;
+					padding: 15px 60px;
+				border-radius: 2px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 20px;
+				margin: 1% 80%;
+				transition-duration: 0.3s;
+				cursor: pointer;
+				
+				width: 10%;
+				position: relative;
+				padding-left: 60px;
+				padding-top: 1px;
+				padding-right: 60px;
+
+				height: 60px;
+
+				
+			}
+			.login:hover{
+					background-color: gray; /* Green */
+				color: white;
+				border: 2px solid red;
+			}
+			.login1 {
+				background-color:#04aa6d; /* Green */
+				border: none;
+				color: white;
+				padding: 1px 10px;
+				text-align: center;
+				text-decoration: none;
+				display:inline-block;
+				font-size: 25px;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				margin: 1px 4px;
+				transition-duration: 0.4s;
+				cursor: pointer;
+				border-radius: 30px;
+			}
+			.login:hover1{
+					background-color:cornflowerblue; /* Green */
+				color: black;
+				border: 2px solid red;
+			}
+			.button1 {
+				background-color: white;
+				color: black;
+				border: 2px solid #04aa6d;
+			}
+			.parent {
+				position: relative;
+			}
+			.text {
+				position: absolute;
+				bottom: 1px;
+				top: 100px;
+				left: 10px;
+				right: 10px;
+				background-color:#000 ;
+				opacity: 0.6;
+				color: aliceblue;
+				padding-left: 50px;
+				padding-right: 50px;
+			padding-top: 10%;
+				border-radius: 40px;
+				height: 70%;
+			}
+			.text2 {
+				position: absolute;
+				bottom: 120px;
+				left: 1px;
+				right: 650px;
+				background-color: #000;
+				opacity: 0.6;
+				color: aliceblue;
+				padding-left: 80px;
+				padding-right: 80px;
+				border-radius: 40px;
+			}
+			.wood2{
+				border-radius: 50px;
+			}
+			.parent img {
+				width: 100%;
+			}
+			@media (max-width:600px) {
+				html{
+					width: fit-content;
+				}
+					body{
+						font-size: 11px;
+					}
+					.navbar {
+				overflow: hidden;
+
+				border-radius: 50px;
+				display: flex;
+				position: fixed;
+				bottom: 0%;
+				width: auto;
+				top: auto;
+				font-size: 20%;
+				padding: 0px;
+
+				justify-content: space-between;
+				/* margin: 0px auto; */
+
+				
+			}
+				
+			
+						.text2{
+					position: relative;
+					font-size: small;
+				}
+				}
+					@media (max-width:1000px) {
+				html{
+					width: fit-content;
+				}
+					body{
+						font-size: 14px;
+					}
+					.navbar {
+				overflow: hidden;
+
+				border-radius: 50px;
+				display: flex;
+				position: fixed;
+				bottom: 0%;
+				width: auto;
+				top: auto;
+				font-size: 40%;
+				padding: 0px;
+						left: auto;
+				justify-content: space-between;
+				/* margin: 0px auto; */
+
+				
+			}
+				
+			
+						.text2{
+					position: relative !important;
+					font-size: small;
+				}
+				}
+		</style>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flavour Town.pk</title>
+	</head>
+	<body>
+
+		<div class="parent">
+			<div
+				style="
+					background-image: url('https://torealestateagent.com/wp-content/uploads/2021/12/Canoe.webp');
+					background-size: cover;
+					height: 800px;
+					padding-top: 10px;
+					width: 100%;
+				"
+			>
+			<nav>
+				<div>
+					<ul class="login">
+						<ol><a href="/login.html">
+							<button class=" login1 login1">Login </button></a>
+						</ol>
+						<ol>
+							<a href="/sign.html"><button class=" login1 login1">signup </button></a>
+						</ol>
+						</ul>
+						</div></nav>
+				
+				<nav>
+					<div>
+						<ul class="navbar">
+
+							<ol class="home">
+								<a href="p.html"
+									><button class="button button2">Home</button></a
+								>
+							</ol>
+							<ol>
+								<a href="contact.html"
+									><button class="button button2">Contact</button></a
+								>
+							</ol>
+							<ol>
+								<a href="/menu.html"
+									><button class="button button2">Menu</button></a
+								>
+							</ol>
+							
+						</ul>
+					</div>
+				</nav>
+				<!--First section-->
+					<br><br><br>
+				<div class="text">
+					<center>
+						<h1 class="mainh">Welcome to Flavour Town Restaurant</h1>
+						<h2 class="mainh2">The Home of Flavour</h2>
+						<br><br><br>
+					</center>
+				
+					</div>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="parent">
+			<div
+				style="
+					background-image: url('https://c8.alamy.com/zooms/9/acf73b543c7d43f9b18e1a7606885b8f/kdb5d6.jpg');
+					background-size: cover;
+					height: 800px;
+					padding-top: 10px;
+					width: 100%;
+				"
+			>
+
+
+
+				<nav>
+					<div>
+						<ul class="navbar">
+							<ol class="home">
+								<a href="/p.html"
+									><button class="button button2">Home</button></a
+								>
+							</ol>
+
+							<ol>
+								<a href="/contact.html"
+									><button class="button button2">Contact</button></a
+								>
+							</ol>
+							<ol>
+								<a href="/menu.html"
+									><button class="button button2">Menu</button></a
+								>
+							</ol>
+						</ul>
+					</div>
+				</nav>
+				<h2 class="main2">Our Discovery</h2>
+				<br />
+				<div class="text2">
+					<i>
+						<p class="mainp">
+							"Welcome to Flavour Town, where every meal is a symphony of
+							flavors meticulously crafted to delight your palate. Our culinary
+							artisans take pride in sourcing the finest ingredients, ensuring
+							each dish is a masterpiece. Immerse yourself in the inviting
+							ambiance, where modern elegance meets warm hospitality. From
+							intimate dinners to celebrations, we curate experiences that
+							linger long after the last bite. At Flavour Town, we invite you to
+							savor the art of dining."
+						</p></i
+					>
+
+				</div>
+			</div>
+		</div>
+		<hr />
+		<br /><br />
+
+		<div
+			style="
+				background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+				background-size: cover;
+				height: 900px;
+				padding-top: 10px;
+				width: 100%;
+			"
+		>
+		<h2 class="rew">Now you can order on</h2>
+		<br>
+			<div class="nav2">
+				<a href="https://www.foodpanda.pk/?gad_source=1&gclid=EAIaIQobChMItruqzaf8ggMVTJNoCR3zegXOEAAYASAAEgJGzfD_BwE"
+					><img
+					class="wood"
+						src="https://cdn2.goodwall.io/images/0/0-1607437257290-8983.jpg?width=1280"
+						alt=""
+						width="100"
+						height="100"
+					/>
+					</a
+				>
+
+				<a href="https://www.careem.com/"
+					><img 
+					style="border-radius: 50px;
+					height: 100px;
+					width: auto;"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/70/1a/8d/701a8d72-4fa8-7fc2-4eb6-1fa724e187ee/source/512x512bb.jpg" alt=""></a
+				>
+
+				<a href="https://www.cheetay.pk/"
+					><img 
+					style="border-radius: 50%;
+					height: 100px;
+					width: auto;"
+					src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPEhUPDxIVFQ8VFRUVDw8PFxUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8PFS8dFR0tLSs3LTctLi0tLys3LTA3Nys3KzcuNzctLSs3Kzc3LC03Nys0ListKysrKys2NzcrN//AABEIAMYA/gMBIgACEQEDEQH/xAAcAAADAQADAQEAAAAAAAAAAAAAAQIDBAUGBwj/xABBEAACAQICBwcCBAMECwEAAAAAAQIDEQQSBQYhMUFRYRNxgaGxwdEHIhQyQvAjJHIVgpGSFzM0RFJUYmOUouEW/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECBAYDBf/EACcRAQACAgECBQQDAAAAAAAAAAABEQIDIQQSBTFBUXETFLHwItHx/9oADAMBAAIRAxEAPwDxKAlMo9GCkNEjAYoe79WNCh7v1AsBAAWJcSwCUwlAzaOS0RKIRgyIrf3+yNpRMUt/f7IKBFCYVLEyiWBLExiYEsz4+C9zRkcX3L3ATIZbJYEMllshgQyWWyWFQS9/g/YtkPf4P2AGSMCD0Cn0fl8lqfR+XyRYq5WC1Lo/L5KzPk/L5M0y0wtqv0fl8ii+j3vlz7xpih7v1YVWbo/L5HmfJ+XyAAGbo/L5DN0fl8jABZuj8vkG+j8vkYXAzl3Py+TC2/Y9/Tkupy2Z239/sglOK2+T8vklt8n5fJyJxMmgMnJ8n5fIs3R+XyWJhUZuj8vkly6Py+S2ICG+j8vki+3c9y5depoyOL7l7gS30fl8kt9H5fJbJYGbfR+XyS30fl8mjJYGbfR+XyS30fkaMhhUX6PyIb27uD5dDRkPf4P2IJb6egX6ehTJA9GKw0xlSkjUh2FYMaWmOD9X6mY6b9X6hbbXAlMYVQCGFAxAAEp7+/2QyVx7/ZBCkYzRpJmUwjNiGyWFJiYyWAmRxfcvcsji+5e4CZLKZLAlkspksCWSymQyKlkPf4P2NGZvf4P2ATEMTA9BnXMpTXMlMpMB51zDMuYJlJlRLkuZMJLnxfqzQUfd+rCUSmuZSqLmAgi1UXMamuZCkUpBbPOuY865hcLkUs65kZ1t28fZGjZnff3+yBKJVFzMZVFzNZSMmypCHNc0LOuZQrhUua5olzXMtiYEOa5kZlffwXuaNkX2+C9wJc1zJc1zNGS2Bm5rmS5rmaMhkVDmuZLkuZZLAhyXMhyV9/D4NGQ9/g/YCXJcxOS5lMQHfpjITKQFoZCKuBQR936iTCD9X6gUDBdN/BLf4I7eereJUO0cFZK7gpXmrb/t9k7nns369dRnlEX7yyx1Z5324zNOnYXPV6r6GpVKXbVI53JyUU9sUotx3Le2095wdY9ERp1aUaC21nJRpX3SjZ7L7lZ+FjUx8T0T1E6OYmL59OPNsz4fujTG6OYn09eXSKQ7na4zVmvSg6l4SsrzjBu6XFq62nTZja079W6JnXlcQ1tmrZqms8albZnff3+yByM82/v9kezzEmQ2NskKGIGIBMQyWAmRxfcvcpkcfBe4U2SxsTAlkspkMgTJY2yWAmQ9/g/YpkPf4P2AGSUyAO+Q0ZKKKUVyA1GZqK5DyoDVBD3fqZqK5F4eMc0c/wCTMs/9Ob7vK4kdhouM6c6eIdKbpQmpSkoScbLe72ts3+B72enMNTp9tKvTyK72STb23so779LHNp2sslstlly7sttlulj5xovQ9HHYyrGKX4anOTcobLxzWjCL4Ju+1cInJ57dXiM5Z7onCNcenNxfl8+z7+GvPo8Yxw/n3z8c15/B6u6wYmHadhRdSEpzmqWWbyZpNpZop5dj3dBvTeI/G0sTjabhCGaEaOSSUYzi1JxzbZS3NvofQsNRjTjkpxUYKyjCCSSXRIMVh4VYuFWKnB74yV1/8fU8p8T6eduWU6OMoq75qYr4v9t6fZbowiI2+XNVxf8AX7To9Jaz4SlSco1YzqZXkpU23JytsTj+lc7nznBSeVJ70kjttYdErD1nS3xaU6cnvcW2rN8001/hzDV3QE8bXhhqKWed7yluhFfmnLouXG6XE6Dw3pdOjXOWrKcozqbl8jr+o27c4x2RU4uC2LDUpVJqnBXnOcYQXOUssYq72La0fQsTqtoOjW/A19I1VjLqMnGP8OM5WtGTVNxi7vc5bOLPP47VqpozSeHw1VqSeIw06NWKaU4OtBJ24STTTV3bxR9G2lTqNM6Ir4Kr2GJhkq5VPJeMvtlezvFtcGcA+v8A1K0Noz8asXpXGzpdpShTo4ehFym1BzvUllhJ2vK25bt7vs8VrtqdTwNOji8JW7fA19lOo7ZoyacopuOySaUrOytlsxErTygj2mrupNCWE/tPSmIeHwb/ANUoK85q7Slubs2naKi295pjNSsFisNUxehMVOv2O2vhq0ctTLa7cbxi07JtXTUrNJ3FlPDMTPS6janf2m6lWdRUcFRV6+I2N3tmywvsX2/c5PYlbY77O8wuqGhtIOWH0XpCo8Yk3COIi8lTLvteEbrrFu2+zQsfPqdOU2owjKUnuhCLlJ8dkYq72XM6kHGTjKLjJWUozTjJPbscXtTPd/SrR9KlpXs8XKVLGUZTjhqKTanVVOtGtGUlFpJQ+5O6vwuY/Vilo2niMRVpYmpPSMq6/EYaUJKnBZPucZZEna0f1PeLKeIZLPo2H1AwWDwsMXpzFToSq2yYeiryV1dRdoylOVrXsrK9tu85Oj/ppgMTRrYzDY2dbCxpylQcFGM4zhGbnCspR/otsi9rvwYsp8vZLPX6pao0dJaPxOIpzqfj8Osyw6ceznFxzw2WzK+WpHfvj4HXag6tLSuMhhruNLJKpWqQ/MqcUkrX2XcpQW3mxY8+yWc3T2HoUsTWpYaUp0KdRwp1Kls0sqSk9iStmUrbN1jgOKAGQ9/g/YbiiGlfw+AGSOyJsB3aY0ZRkWmEaXKuZplJhV3O21Q0bTxmMo4WtKUadWc4ylSaUlaE5Kzkmt8VwOoucjROOlhq1PEQ/NSqxqJc8s7uPirrxA+z1PpFhXDs1jMfGm99OFakovvj2VjwGodBUJ4vD7pU6rjt32hKcPbzPvWj8ZDEUoV6Us1OpCM4SXGMldep8l+pGr1bAYt6YwkM1Cp/tkFd5JWSlKVt1OSjFuX6ZK72M0Ot6b63T568OJn83bb6bf8AT24Z5cxH4c1cf3wHc6TAaz4WqrurGnJ/orNQfg27PwZxtK64Yagm1VjUlwhRam33vdHvZxv2e+c+zsnu+HURu1Tj398dvvbp/qLWSrYeK/MqdRy/pcopecX/AIHc/RfFQhpBxnZOph6kKbf/ABKdOeVdXGMn/dPHaa0fjZqOksXRlCliHajJpqKivyRs9sU1uvbNtZxqFSUHGUG4zi1KMouzjJO6afBpnbdDonR0+GvLzj/XKdXujbuyzjycvS2iMTHG1cJKlN4mdeplgk26meo3GafGLUk77lx3M5lbV3E6P0hhKWLlF1ZV8PNRhUdS0HXgtt/y3affY7P/AEraVhDIqlGTtbtalK8+95ZKLf8AdPHvSteeI/GVajqYrtIVO1qWf3QcZRVlZZU0tisjba/D2H1x26V7sNRt0++qczSl/wD8rhtu1Yl2/wDKrni9ZdN19IV/xWKcHUyRh/Ci4rLFya2Nvb9zNsTrBiJ4GGjG6f4WE+0isj7TNnlU/Pfdeb4ErgfVMbpTD/2JgsTPALHYenTpxqUrr+DOEOzlJqz3SjKLfC5wtVNaYxpVMZo7QDp0LNVq1OpSpxlGCzPbJLMl0ufPNV9bMZo3N+EqpQk7zo1IqdOT3Zsuxp24prrc11n190jpKHYYirCNB/npYeGRTs7rO23JrpexKW3ufpHiYS0NiqP4dYipTqTlVwd7OtCUIOKW+91FpLi4WONqrrJh61e+jtXf5mjdudOVOEqb/K7ylFKL2tWe3efOtA6Wr4Kqq+EqOnVSy5lZqUbpuMou6knZb/I9HpX6qaVr03R7WlSUlaVShTcalnvs5SeXvW0UW5+rukpYnWaFadLsZSrVVOi5RnlnDCVack5R2N3jwPO/UWDp6XxVScJZFiIys4u04pRlZN7HdJnQ6PrzoTjVpTlCrCSnCpF/cpL9V37777T0GtGveP0jRjhsVKlKlGcal4U8knKKkldp24vgWi3sPrtgataphsfSTqYN0HFVIJyjCUpZ1J23KUWtv/Scz6RaIxFDR+kMRWjKFKvS/gQmmm+zpVc9RRe5PPFX45OVjw+rf1B0ho6n2OGqQlRV8lLERzxhd3eRpqSXS7XJI0n9UNKSdZzq05KtDs3TlT+yEbSVqaTVm87u3duy5EE/RvTzwekKSk7UcRHsKt915baT/wA9l3TZ7rF6Njq1g9JYqNlVxFZ0dH2tdU5rNTS5ZXKq7f8AbR8j1Z0TPGYmhg6banUnGKmt8UvunNdYxjKXge4+vGnu3xkMDCV6WFinU61qiu79VHL/AJmB82grWSNWRTRTMkDIe/w+CmQ9/h8ABIySDsYzNYyOIu/0Li+r8io5ikWmcWMuvoaxfX0A2uEH6v1M13+g4d/F8uYV9K+l2vccH/JYydsLJt0a0nsoye1xm+FNvbf9Lb4PZ9sTUldWcWtjW1NP1R+S/F+R6HVnXfHaNShQqKpQ/wCWxF5QS5U2ttPuWzoSYWJfZtMfTTRmKk5zw+ST2yeHnOkn3wi8vkVoT6baMwclUpYZSqLbGdeU6tnziptxT6pXPIYL6307fzGBqxlxdCpCov8A3yNEY/65U0v5fA1ZS4OvUhBLvy5mycnD6rpLC0q1KdLERjKhKLVSNT8uXjd8Od+Fj8waeWGhiatLBVnWw0ZWp1Wt/NKX60nszcfN761684/Sl4V6nZ4d/wC7Ye8YNcpu95+OzoedpUmtz2eBYYzLlyM4rf3+yDxfkSuO17+nJFGjC5Hi/L4Fbq/IKsloVur8vgVur8gGJoVuvoS11fl8AOxL3+C9wa6vyJtt38uXUBktIGuvoJrr6AbYTFVKEu0o1J06iTSqUpOEknsaUo7TjYmcpylOcpTnJ5pzm3KUm97cntbG119CWuvoAITDx9CWuvoAyG9v76Da6k26gDEDXUVupBykykzNMpMo0UjSMzBMpMI5UZlQl6v1ONGRdOfq/UDkplXMYzKUgKcUS6aHcTYCyJCbCUjNsIdxRe/v9kK4k9/f7IMl3C5NxXAq4ribFcB3E2JsVwG2Rfb4L3G2Tfb4L3AbE2DZNwBksdyWwC5I2SAMl7/30GyXv/fQAYgEQbpjTM02O7A1TGmZJspN9ANLjg/V+pndhFv19SjkRmaKZxbvoUpPoEcrMDkcfM+gZn0A1bJuRd9BXfQDS4k9/f7Ii76Ci3t3ftIK1uK5F30C76AW2K5F30C76AVcTZLb6Cu+gFXJvt8F7ibfQSbv++oFALb0KVwiWiWaNPoTJMDNktlSTM3cimS94O5IDEwEBoikJDsA7jTJC4F3HF+r9SLhF+/qBqmNMzuO5RpcLkXC4F3Hci4XAu4k9/f7Egnv/fBAXcLkXC4FXFcVxXAq4riuK4DuJb/Be4rgnt/fUDRFIlDuEUSwbE2RUyRnKJqQwUxZLNWjOSAQgYgNUUQmO4FksLibAdwi/ci4RkBrcdzPMGYDS47meYeYC7juZ5h5gLuJPf8AvgicwkwNLhcjN3hmAq4XIzBmAq4XJzCzAXca3kZhpgajIzBmApsTZNxXAdxCuFwBksbYrgQ0S0aMlgJMq4gAdxXAAECAAHcYgAoAAAuO4AAXEmAAO4XAAC4rgABcLgADRSAAigAApCAAAVwAKTEAADAQAf/Z" alt=""></a
+				>
+				<a href="https://www.supermeal.pk/"
+					><img 
+					style="border-radius: 50px;
+					height: 100px;
+					width: auto;"
+					src="https://www.supermeal.pk/resources/lefttoright/images/supermeal-web-share-icon.jpg" alt=""></a
+				>
+			</div>
+
+			<br><br>
+			<center><h1 class="rew">Reserve a Table</h1></center>
+			
+			<div style="padding:10px 550px; height:30px">
+			<a href="">
+				<button >
+					<img src="https://cdn.geekwire.com/wp-content/uploads/2016/10/bigstock-Reserved-sign-on-a-restaurant-129871229.jpg" alt=""></button>
+			</a></div>
+
+			<center><div onmouseover="mi(this)" onmouseout="mo(this)"
+			style="width:100px;height:1px;padding:200px;color: aliceblue;
+			left: 200; "
+			>
+		<script>
+			function mo(obj) {
+				obj.innerHTML = "Thank you for visiting our Restaurant"
+			}
+			function mi(obj) {
+				obj.innerHTML = "Have a good day"
+			}
+		</script>
+		</div></center>
+			</div>
+		</div>
+		
+	</body>
+</html>
